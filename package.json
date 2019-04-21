@@ -1,0 +1,47 @@
+{
+  "name": "strix-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "peerDependencies": {
+    "react": "^16.8.6"
+  },
+  "dependencies": {
+    "@babel/core": "^7.4.3",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "react": "^16.8.6",
+    "webpack": "^4.30.0"
+  },
+  "scripts": {
+    "start": "webpack --mode production --watch",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asafari72/strix-ui.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Ali Safari",
+    "email": "asafari72@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asafari72/strix-ui/issues"
+  },
+  "homepage": "https://github.com/asafari72/strix-ui#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "css-loader": "^2.1.1",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack-cli": "^3.3.0"
+  }
+}
