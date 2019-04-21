@@ -1,0 +1,13 @@
+@import "../../styles/base/variable";
+
+.input-container {
+  input {
+    background: $white-color;
+    border: 1px solid $border-color;
+    height: $base-size;
+    outline-color: transparent;
+    @include border-radius($radius-size);
+    padding: 0 $sm-size;
+    font-size: $font-size;
+  }
+}

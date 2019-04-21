@@ -3,7 +3,7 @@ import "./index.scss";
 export class TextBox extends Component {
   render() {
     return (
-      <div>
+      <div className="input-container">
         <input />
       </div>
     );

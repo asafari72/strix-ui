@@ -1,3 +1,5 @@
-import { TextBox } from "./text-box";
+import './styles/index.scss';
+
+import { TextBox } from "./components/text-box";
 
 export { TextBox };
