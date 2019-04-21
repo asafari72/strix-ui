@@ -1,0 +1,31 @@
+{
+  "name": "strix-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "peerDependencies": {
+    "react": "^16.8.6"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "webpack": "^4.30.0"
+  },
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asafari72/strix-ui.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Ali Safari",
+    "email": "asafari72@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asafari72/strix-ui/issues"
+  },
+  "homepage": "https://github.com/asafari72/strix-ui#readme"
+}
