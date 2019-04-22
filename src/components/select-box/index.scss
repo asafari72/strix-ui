@@ -1,5 +1,5 @@
 @import "../../styles/base/variable";
-.input-container {
+.select-container {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -12,20 +12,18 @@
   background: $white-color;
   border: 1px solid;
   border-color: $border-color;
-  input {
-    width: 100%;
-    background-color: transparent;
-    height: $base-size;
-    outline-color: transparent;
-    font-size: $font-size;
-    padding: 0 $sm-size;
-    text-align: right;
-    border: none;
-    font-family: $font-family;
-    direction: rtl;
-  }
-  .input-left {
+  .select-box {
     flex: 1;
     margin: 0 $md-size;
+
+    .css-3mgaix-control {
+      border: transparent !important;
+    }
+    .css-3esr4u-a11yText {
+      border: transparent !important;
+    }
   }
+}
+.react-select-container {
+  border-radius: 100px !important;
 }

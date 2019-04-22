@@ -8,3 +8,6 @@ import { Button } from "./components/button";
 import { Card } from "./components/card";
 
 export { TextBox, IconBadge, Button, Card };
+import { SelectBox } from "./components/select-box";
+
+export { TextBox, IconBadge, Button, SelectBox };

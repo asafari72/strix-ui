@@ -13,6 +13,8 @@
     "babel-loader": "^7.1.5",
     "iran-sans-font-num": "git+https://github.com/asafari72/iran-sans-font-num.git",
     "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-select": "^2.4.3",
     "webpack": "^4.30.0"
   },
   "scripts": {
