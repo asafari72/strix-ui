@@ -1,7 +1,8 @@
+import "iran-sans-font-num/css/style.scss";
 import "./styles/index.scss";
 
 import { TextBox } from "./components/text-box";
 import { IconBadge } from "./components/icon-badge";
-import { Button } from "./components/button";
+import { ButtonS } from "./components/button";
 
-export { TextBox, IconBadge, Button };
+export { TextBox, IconBadge, ButtonS };
