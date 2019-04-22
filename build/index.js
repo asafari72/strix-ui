@@ -286,7 +286,7 @@ eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader/
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.IconBadge = exports.TextBox = undefined;\n\n__webpack_require__(/*! ./styles/index.scss */ \"./src/styles/index.scss\");\n\n__webpack_require__(/*! iran-sans-font-num/css/style.scss */ \"./node_modules/iran-sans-font-num/css/style.scss\");\n\nvar _textBox = __webpack_require__(/*! ./components/text-box */ \"./src/components/text-box/index.js\");\n\nvar _iconBadge = __webpack_require__(/*! ./components/icon-badge */ \"./src/components/icon-badge/index.js\");\n\nexports.TextBox = _textBox.TextBox;\nexports.IconBadge = _iconBadge.IconBadge;\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.IconBadge = exports.TextBox = undefined;\n\n__webpack_require__(/*! iran-sans-font-num/css/style.scss */ \"./node_modules/iran-sans-font-num/css/style.scss\");\n\n__webpack_require__(/*! ./styles/index.scss */ \"./src/styles/index.scss\");\n\nvar _textBox = __webpack_require__(/*! ./components/text-box */ \"./src/components/text-box/index.js\");\n\nvar _iconBadge = __webpack_require__(/*! ./components/icon-badge */ \"./src/components/icon-badge/index.js\");\n\nexports.TextBox = _textBox.TextBox;\nexports.IconBadge = _iconBadge.IconBadge;\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
