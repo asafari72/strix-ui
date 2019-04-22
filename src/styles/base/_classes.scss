@@ -38,3 +38,8 @@
   background-color: $red-color !important;
   color: $white-color !important;
 }
+
+.spin {
+  animation: spin 0.8s infinite;
+}
+@include spin();

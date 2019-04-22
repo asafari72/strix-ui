@@ -8,10 +8,10 @@
   },
   "dependencies": {
     "@babel/core": "^7.4.3",
+    "@fortawesome/fontawesome-free": "^5.8.1",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "iran-sans-font-num": "git+https://github.com/asafari72/iran-sans-font-num.git",
-    "material-icons": "^0.3.1",
     "react": "^16.8.6",
     "webpack": "^4.30.0"
   },

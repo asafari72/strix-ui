@@ -3,15 +3,13 @@
 .icon-badge-container {
   width: $base-size;
   height: $base-size;
-  background: $red-color;
+  background: $gray-color;
+  color: $grey-color-dark;
   @include border-radius($radius-size);
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.icon-badge-container:hover {
-  cursor: default;
-  background: $gray-color;
-  @include border-radius($radius-size);
-  color: $grey-color-dark;
+  &:hover {
+    cursor: default;
+  }
 }

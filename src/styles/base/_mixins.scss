@@ -41,11 +41,11 @@
 }
 
 @mixin button-color($background-color, $text-color) {
-  background-color: $background-color !important;
-  div {
+  button {
+    background-color: $background-color !important;
     color: $text-color !important;
   }
-  button {
+  i {
     color: $text-color !important;
   }
 }
@@ -79,6 +79,33 @@
     100% {
       -webkit-transform: translateY($to);
       transform: translateY($to);
+    }
+  }
+}
+
+@mixin spin {
+  @-moz-keyframes spin {
+    from {
+      -moz-transform: rotate(0deg);
+    }
+    to {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
     }
   }
 }

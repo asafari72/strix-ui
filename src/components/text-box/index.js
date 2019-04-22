@@ -11,11 +11,11 @@ export class TextBox extends Component {
       <div
         className={isFoucs ? "input-container is-focused" : "input-container"}
       >
-        {right ? <div>{right}</div> : ""}
+        {right ? <div>{right}</div> : <div />}
         <div>
           <input onFocus={this.onFocus} onBlur={this.onBlur} {...this.props} />
         </div>
-        {left ? <div>{left}</div> : ""}
+        {left ? <div>{left}</div> : <div />}
       </div>
     );
   }

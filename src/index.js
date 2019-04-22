@@ -1,5 +1,5 @@
 import "iran-sans-font-num/css/style.scss";
-import "material-icons/iconfont/material-icons.scss";
+import "@fortawesome/fontawesome-free/css/all.css";
 import "./styles/index.scss";
 
 import { TextBox } from "./components/text-box";
