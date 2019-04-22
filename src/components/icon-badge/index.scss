@@ -11,4 +11,7 @@
 }
 .icon-badge-container:hover {
   cursor: default;
+  background: $gray-color;
+  @include border-radius($radius-size);
+  color: $grey-color-dark;
 }

@@ -1,0 +1,40 @@
+@import "./variable";
+.material-icons {
+  vertical-align: middle !important;
+}
+.is-focused {
+  border-color: $primary-color !important;
+  box-shadow: 0 0 0 0.2rem rgba($primary-color, 0.2);
+  .icon-badge-container {
+    background: rgba($primary-color, 0.2);
+    color: rgba($primary-color, 0.8);
+  }
+}
+.is-complete {
+  border-color: $green-color !important;
+  box-shadow: 0 0 0 0.2rem rgba($green-color, 0.2);
+  .icon-badge-container {
+    background: rgba($green-color, 0.2);
+    color: rgba($green-color, 0.8);
+  }
+}
+.is-error {
+  border-color: $red-color !important;
+  box-shadow: 0 0 0 0.2rem rgba($red-color, 0.2);
+  .icon-badge-container {
+    background: rgba($red-color, 0.2);
+    color: rgba($red-color, 0.8);
+  }
+}
+.is-focused-bk {
+  background-color: $primary-color !important;
+  color: $white-color !important;
+}
+.is-complete-bk {
+  background-color: $green-color !important;
+  color: $white-color !important;
+}
+.is-error-bk {
+  background-color: $red-color !important;
+  color: $white-color !important;
+}
