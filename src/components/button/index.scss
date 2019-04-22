@@ -1,0 +1,22 @@
+@import "../../styles/base/variable";
+.button-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  background-color: $white-color;
+  @include border-radius($radius-size);
+  height: $base-size;
+  padding: $sm-size;
+  background: $white-color;
+  border: 1px solid;
+  border-color: $border-color;
+  button {
+    width: 100%;
+    font-family: $font-family;
+    height: $base-size;
+    background-color: transparent;
+    outline-color: transparent;
+    border: none;
+  }
+}

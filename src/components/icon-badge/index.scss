@@ -1,8 +1,14 @@
 @import "../../styles//base/variable";
 
 .icon-badge-container {
-    width: $base-size;
-    height: $base-size;
-    background: $red-color;
-    @include border-radius($radius-size);
+  width: $base-size;
+  height: $base-size;
+  background: $red-color;
+  @include border-radius($radius-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-badge-container:hover {
+  cursor: default;
 }
