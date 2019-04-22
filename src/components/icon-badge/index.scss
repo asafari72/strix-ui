@@ -1,8 +1,9 @@
 @import "../../styles//base/variable";
 
 .icon-badge-container {
-    width: $base-size;
-    height: $base-size;
-    background: $red-color;
-    @include border-radius($radius-size);
+  width: $base-size;
+  height: $base-size;
+  background: $gray-color;
+  @include border-radius($radius-size);
+  color: $grey-color-dark;
 }

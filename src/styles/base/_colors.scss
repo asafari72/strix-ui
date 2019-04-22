@@ -7,7 +7,11 @@ $blue-color: #1e88e5;
 $yellow-color: #fb8c00;
 $white-color: #ffffff;
 $black-color: #000000;
-$gray-color: #e4e4e4;
 
+$gray-color: #e4e4e4;
+$grey-color-dark: darken(
+  $color: $gray-color,
+  $amount: 30%
+);
 $border-color: $gray-color;
 $shadow-color: darken($gray-color, 10%);
