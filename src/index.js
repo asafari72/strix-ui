@@ -3,6 +3,6 @@ import "./styles/index.scss";
 
 import { TextBox } from "./components/text-box";
 import { IconBadge } from "./components/icon-badge";
-import { ButtonS } from "./components/button";
+import { Button } from "./components/button";
 
-export { TextBox, IconBadge, ButtonS };
+export { TextBox, IconBadge, Button };
