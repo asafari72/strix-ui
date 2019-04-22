@@ -7,12 +7,15 @@ export class TextBox extends Component {
       <div className="input-container">
         {right ? <div>{right}</div> : ""}
         <div>
-          <input {...this.props} />
+          <input onFocus={this.onFocus} {...this.props} />
         </div>
         {left ? <div>{left}</div> : ""}
       </div>
     );
   }
+  onFocus = () => {
+    console.log("object");
+  };
 }
 
 export default TextBox;
