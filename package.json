@@ -10,11 +10,12 @@
     "@babel/core": "^7.4.3",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
+    "iran-sans-font-num": "git+https://github.com/asafari72/iran-sans-font-num.git",
     "react": "^16.8.6",
     "webpack": "^4.30.0"
   },
   "scripts": {
-    "start": "webpack --mode production --watch",
+    "start": "webpack --mode development --watch",
     "build": "webpack --mode production"
   },
   "repository": {
@@ -42,6 +43,7 @@
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
     "webpack-cli": "^3.3.0"
   }
 }
