@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./index.scss";
-class TextBox extends Component {
+export class TextBox extends Component {
   render() {
     const { left, right } = this.props;
     return (
