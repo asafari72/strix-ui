@@ -9,8 +9,4 @@ import { Card } from "./components/card";
 import { SelectBox } from "./components/select-box";
 import { Notify } from "./components/notify";
 
-<<<<<<< HEAD
 export { TextBox, IconBadge, Button, SelectBox, Card, Notify };
-=======
-export { TextBox, IconBadge, Button, SelectBox, Card };
->>>>>>> 00991ed6db1814390e87725b5ebe17ec08ac5885
