@@ -2,13 +2,11 @@
 
 .card-container {
   position: relative;
-  border: 1px solid;
-  border-color: $gray-color;
-  @include border-radius($radius-size);
-  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.15);
   .card-header {
     display: flex;
-    background-color: #00bcd4;
+    background-color: $primary-color;
     color: $white-color;
     padding: $sm-size;
     border-top-left-radius: $radius-size - 70;
@@ -32,5 +30,13 @@
         margin: 0 40px;
       }
     }
+  }
+  .card-footer {
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: $gray-color;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: $sm-size;
   }
 }
