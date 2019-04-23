@@ -15,12 +15,24 @@
   .select-box {
     flex: 1;
     margin: 0 $md-size;
-
+    .css-1hwfws3 {
+      padding: 0 !important;
+    }
     .css-3mgaix-control {
       border: transparent !important;
     }
     .css-3esr4u-a11yText {
       border: transparent !important;
+    }
+    .css-es53b3-multiValue {
+      border-radius: $radius-size;
+      padding: 0 $sm-size;
+    }
+    .css-1alnv5e {
+      border-radius: $radius-size;
+      height: 22px;
+      margin: 2px 0px 0 0;
+      cursor: pointer;
     }
   }
 }

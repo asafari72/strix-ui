@@ -59,7 +59,7 @@ export class Button extends Component {
         )}
         <button {...this.props} disabled={loading}>
           {" "}
-          {loading ? <i class="fas fa-circle-notch fa-spin fa-lg	" /> : name}
+          {loading ? <i className="fas fa-circle-notch fa-spin fa-lg	" /> : name}
         </button>
       </div>
     );
