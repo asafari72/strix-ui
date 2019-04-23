@@ -1,7 +1,7 @@
 @import "../../styles/base/variable";
 .select-container {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   background-color: $white-color;
