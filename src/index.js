@@ -5,6 +5,7 @@ import "./styles/index.scss";
 import { TextBox } from "./components/text-box";
 import { IconBadge } from "./components/icon-badge";
 import { Button } from "./components/button";
+import { Card } from "./components/card";
 import { SelectBox } from "./components/select-box";
 
 export { TextBox, IconBadge, Button, SelectBox };
