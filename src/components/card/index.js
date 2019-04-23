@@ -3,7 +3,7 @@ import "./index.scss";
 
 export class Card extends Component {
   render() {
-    const { header, title, footer, icon } = this.props;
+    const { header, title, footer, icon, footerItems } = this.props;
     return (
       <div className="card-container">
         {header ? (
@@ -16,8 +16,8 @@ export class Card extends Component {
         ) : (
           ""
         )}
-        <div className="card-body">{this.props.children}</div>
-        {footer ? <div className="card-footer">Footer</div> : ""}
+        {this.props.children}
+        {footer ? <div className="card-footer">{footerItems}</div> : ""}
       </div>
     );
   }
