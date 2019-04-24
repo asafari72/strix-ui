@@ -1,0 +1,12 @@
+.notify-container {
+  position: absolute;
+  background: #f00;
+  min-width: 260px;
+  z-index: 1;
+  top: 0;
+  border-radius: 100px;
+  padding: 5px;
+  header {
+    background: white;
+  }
+}

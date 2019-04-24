@@ -26,15 +26,19 @@
     color: rgba($red-color, 0.8);
   }
 }
-.is-focused-bk {
+.bk-primary {
   background-color: $primary-color !important;
   color: $white-color !important;
 }
-.is-complete-bk {
+.bk-success {
   background-color: $green-color !important;
   color: $white-color !important;
 }
-.is-error-bk {
+.bk-wrning {
+  background-color: $yellow-color !important;
+  color: $white-color !important;
+}
+.bk-danger {
   background-color: $red-color !important;
   color: $white-color !important;
 }

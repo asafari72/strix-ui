@@ -3,17 +3,13 @@ import { IconBadge } from "../icon-badge";
 import Select from "react-select";
 import "./index.scss";
 
-const options = [
-  { value: "chocolate", label: "Chocolate" },
-  { value: "strawberry", label: "Strawberry" },
-  { value: "vanilla", label: "Vanilla" }
-];
 const customStyles = {
   control: (provided, state) => (
     console.log("state", state),
     {
       ...provided,
-      border: "none"
+      border: "none",
+      boxShadow: "none"
     }
   ),
   input: (provided, state) => ({
@@ -37,13 +33,12 @@ export class SelectBox extends Component {
         </IconBadge>
         <Select
           placeholder="انتخاب کنید ..."
-          options={options}
-          {...this.props}
           onFocus={this.onFocus}
           onBlur={this.onBlur}
           styles={customStyles}
           isRtl={true}
           className="select-box"
+          {...this.props}
         />
       </div>
     );
