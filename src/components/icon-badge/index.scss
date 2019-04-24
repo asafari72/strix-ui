@@ -13,3 +13,10 @@
     cursor: default;
   }
 }
+.badge-small {
+  width: $xl-size !important;
+  height: $xl-size !important;
+  i {
+    font-size: $font-size - 2 !important;
+  }
+}
