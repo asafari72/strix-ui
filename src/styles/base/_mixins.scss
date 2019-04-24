@@ -50,13 +50,14 @@
   }
 }
 @mixin button-color-outline($color) {
-  border-color: $color !important;
-  div {
-    background-color: $color !important;
-    color: $white-color !important;
-  }
   button {
+    border-color: $color !important;
+    background-color: $white-color !important;
     color: $color !important;
+  }
+  .button-right i {
+    background: $color !important;
+    color: $white-color !important;
   }
 }
 

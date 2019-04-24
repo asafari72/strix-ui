@@ -1,12 +1,51 @@
+@import "../../styles/base/variable";
 .notify-container {
-  position: absolute;
-  background: #f00;
+  position: fixed;
   min-width: 260px;
   z-index: 1;
-  top: 0;
-  border-radius: 100px;
-  padding: 5px;
+  left: 50%;
+  top: 10px;
+  margin-left: -130px;
+  border-radius: 10px;
+  -webkit-animation: ease-in alternate;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background: #fff;
+  overflow: hidden;
   header {
-    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 14px;
+    i {
+      cursor: pointer;
+    }
+  }
+  span {
+    display: flex;
+    padding: 10px;
+    font-size: 14px;
+    color: #6d6d6d;
+  }
+  &.rounded {
+    border-radius: $radius-size !important;
+    text-align: center !important;
+    span {
+      justify-content: center;
+    }
+  }
+}
+@-webkit-keyframes run {
+  0% {
+    top: -200px;
+  }
+  50% {
+    top: -100px;
+  }
+  100% {
+    top: 10px;
   }
 }

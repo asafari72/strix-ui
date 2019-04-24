@@ -3,6 +3,7 @@
   width: 100%;
   margin: $sm-size 0;
   position: relative;
+
   button {
     height: $base-size + 12;
     padding: $sm-size;
@@ -14,6 +15,8 @@
     outline-color: transparent;
     width: 100%;
     background: $gray-color;
+    border: 1px solid;
+    border-color: transparent;
   }
   .button-right {
     i {
@@ -55,7 +58,7 @@
 .btn-warning-outline {
   @include button-color-outline($yellow-color);
 }
-.btn-danger-outline-outline {
+.btn-danger-outline {
   @include button-color-outline($red-color);
 }
 .btn-small {
