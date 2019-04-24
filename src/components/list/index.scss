@@ -1,0 +1,19 @@
+@import "../../styles//base/variable";
+
+ul {
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 !important;
+  text-align: right !important;
+  li {
+    margin: $md-size $sm-size;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    h4 {
+      font-size: $font-size;
+      font-weight: normal;
+      margin: 0 $md-size;
+    }
+  }
+}

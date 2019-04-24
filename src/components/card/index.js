@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { IconBadge } from "../icon-badge";
 import "./index.scss";
 
 export class Card extends Component {
@@ -9,7 +10,9 @@ export class Card extends Component {
         {header ? (
           <div className="card-header">
             <div className="header-right">
-              <i className={"fas fa-" + icon} />
+              <IconBadge BackgroundColor="#03a9f4" Color="#ffffff" size="small">
+                <i className={"fas fa-" + icon} />
+              </IconBadge>
               <p>{title}</p>
             </div>
           </div>

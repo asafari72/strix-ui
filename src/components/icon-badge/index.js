@@ -1,12 +1,32 @@
-import React from 'react'
-import "./index.scss"
+import React, { Component } from "react";
+import "./index.scss";
 
-const IconBadge = (props) => {
+export class IconBadge extends Component {
+  state = {
+    size: "normal"
+  };
+  componentDidMount() {
+    switch (this.props.size) {
+      case "small":
+        this.setState({ size: "small" });
+        break;
+      default:
+        this.setState({ size: "normal" });
+        break;
+    }
+  }
+  render() {
+    const { size } = this.state;
+    const { BackgroundColor, Color } = this.props;
     return (
-        <div className="icon-badge-container" style={{backgroundColor:props.backgroundColor, color: props.color}}>
-            {props.children}
-        </div>
-    )
+      <div
+        className={"icon-badge-container badge-" + size}
+        style={{ backgroundColor: BackgroundColor, color: Color }}
+      >
+        {this.props.children}
+      </div>
+    );
+  }
 }
 
-export { IconBadge }
+export default IconBadge;
