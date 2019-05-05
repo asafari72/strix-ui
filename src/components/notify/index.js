@@ -15,7 +15,7 @@ export class NotifyComponent extends React.Component {
         {title ? (
           <header className={"bk-" + type}>
             {title}
-            {/* {closeable ? (
+            {closeable ? (
               <i
                 className="fas fa-times"
                 onClick={() => {
@@ -25,7 +25,7 @@ export class NotifyComponent extends React.Component {
               />
             ) : (
               ""
-            )} */}
+            )}
           </header>
         ) : (
           ""

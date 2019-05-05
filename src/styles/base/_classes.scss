@@ -42,7 +42,22 @@
   background-color: $red-color !important;
   color: $white-color !important;
 }
-
+.bk-primary-dark {
+  background-color: darken($color: $primary-color, $amount: 7%) !important;
+  color: $white-color !important;
+}
+.bk-success-dark {
+  background-color: darken($color: $green-color, $amount: 7%) !important;
+  color: $white-color !important;
+}
+.bk-wrning-dark {
+  background-color: darken($color: $yellow-color, $amount: 7%) !important;
+  color: $white-color !important;
+}
+.bk-danger-dark {
+  background-color: darken($color: $red-color, $amount: 7%) !important;
+  color: $white-color !important;
+}
 .spin {
   animation: spin 0.8s infinite;
 }
