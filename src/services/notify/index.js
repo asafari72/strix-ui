@@ -42,9 +42,20 @@ export class Notify extends React.Component {
     }
 
     if (timeOut > 0) {
-      setTimeout(() => {
-        document.getElementById("notify-wrapper").removeChild(notifyContainer);
-      }, timeOut);
+      let progress = document.createElement("div");
+      progress.className = "notify-progress";
+      notifyContainer.appendChild(progress);
+      progress.style.width = 100;
+      let timer = setInterval(() => {
+        if (progress.style.width === 0) {
+          document
+            .getElementById("notify-wrapper")
+            .removeChild(notifyContainer);
+          clearInterval(timer);
+        }
+        console.log("progress.style.width");
+        --progress.style.width;
+      }, timeOut / 100);
     }
   }
   static info(title, message, timeOut) {
