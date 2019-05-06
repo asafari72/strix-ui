@@ -7,7 +7,7 @@ import { Card } from "./components/card";
 import { SelectBox } from "./components/select-box";
 import { List } from "./components/list";
 import { Collapse } from "./components/collapse-panel";
-import { Notify } from "./components/notify/notify.service";
+import { Notify } from "./services/notify/index";
 import { Radio } from "./components/radio";
 import { CheckBox } from "./components/checkbox";
 
