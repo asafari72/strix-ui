@@ -1,8 +1,10 @@
 @import "./base/classes";
 html,
 body {
-  font-family: IRANSans, Tahoma;
+}
+.rtl{
   direction: rtl;
+  text-align: right;
 }
 :root {
   position: relative;

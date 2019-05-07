@@ -2,7 +2,7 @@ import React from "react";
 import "./index.scss";
 
 export class Notify extends React.Component {
-  static show(title, message, type = "primary", timeOut = 0) {
+  static show(title, message, icon, type = "primary", timeOut = 0) {
     console.log("title", title);
     console.log("type", type);
     console.log("message", message);
@@ -19,8 +19,12 @@ export class Notify extends React.Component {
     if (title !== null) {
       let header = document.createElement("header");
       header.className = "bk-" + type + "-dark";
-      header.textContent = title;
       notifyContainer.appendChild(header);
+      let _icon = document.createElement("i");
+      _icon.className = icon;
+      header.textContent = title;
+
+      header.appendChild(_icon);
     } else {
       notifyContainer.className = "notify-container rounded";
     }
@@ -45,34 +49,45 @@ export class Notify extends React.Component {
       let progress = document.createElement("div");
       progress.className = "notify-progress";
       notifyContainer.appendChild(progress);
-      progress.style.width = 100;
+
+      let width = 100;
       let timer = setInterval(() => {
-        if (progress.style.width === 0) {
+        if (width === 0) {
           document
             .getElementById("notify-wrapper")
             .removeChild(notifyContainer);
           clearInterval(timer);
         }
-        console.log("progress.style.width");
-        --progress.style.width;
+        progress.style.width = --width + "%"
       }, timeOut / 100);
+    }
+    else {
+      notifyContainer.addEventListener("click", () => {
+        document
+          .getElementById("notify-wrapper")
+          .removeChild(notifyContainer);
+      })
     }
   }
   static info(title, message, timeOut) {
     let type = "primary";
-    this.show(title, message, type, timeOut);
+    let icon = "fas fa-info"
+    this.show(title, message, icon, type, timeOut);
   }
   static success(title, message, timeOut) {
     let type = "success";
-    this.show(title, message, type, timeOut);
+    let icon = "fas fa-check-circle"
+    this.show(title, message, icon, type, timeOut);
   }
   static warning(title, message, timeOut) {
     let type = "warning";
-    this.show(title, message, type, timeOut);
+    let icon = "fas fa-exclamation-triangle"
+    this.show(title, message, icon, type, timeOut);
   }
   static error(title, message, timeOut) {
     let type = "danger";
-    this.show(title, message, type, timeOut);
+    let icon = "fas fa-exclamation-circle"
+    this.show(title, message, icon, type, timeOut);
   }
 }
 

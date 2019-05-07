@@ -17,11 +17,11 @@
     background-color: transparent;
     height: $base-size;
     outline-color: transparent;
+    font-family: inherit;
     font-size: $font-size;
     padding: 0 $sm-size;
     text-align: right;
     border: none;
-    font-family: $font-family;
     direction: rtl;
   }
   .input-left {

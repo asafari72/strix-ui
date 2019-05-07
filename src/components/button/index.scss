@@ -9,7 +9,7 @@
     padding: $sm-size;
     border: none;
     @include border-radius($radius-size);
-    font-family: $font-family;
+    font-family: inherit;
     font-size: $font-size;
     cursor: pointer;
     outline-color: transparent;
