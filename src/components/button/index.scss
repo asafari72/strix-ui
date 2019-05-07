@@ -8,7 +8,7 @@
     height: $base-size + 12;
     padding: $sm-size;
     border: none;
-    @include border-radius($radius-size);
+    @include border-radius($circle-radius-size);
     font-family: inherit;
     font-size: $font-size;
     cursor: pointer;
@@ -29,7 +29,7 @@
       background: rgba($black-color, 0.2);
       right: $sm-size + 1;
       top: $sm-size + 1;
-      @include border-radius($radius-size);
+      @include border-radius($circle-radius-size);
       &:hover {
         cursor: default;
       }

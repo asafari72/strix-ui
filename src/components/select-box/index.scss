@@ -6,7 +6,7 @@
   justify-content: flex-start;
   background-color: $white-color;
   margin: $md-size 0;
-  @include border-radius($radius-size);
+  @include border-radius($circle-radius-size);
   height: $base-size;
   padding: $sm-size;
   background: $white-color;
@@ -25,11 +25,11 @@
       border: transparent !important;
     }
     .css-es53b3-multiValue {
-      border-radius: $radius-size;
+      border-radius: $circle-radius-size;
       padding: 0 $sm-size;
     }
     .css-1alnv5e {
-      border-radius: $radius-size;
+      border-radius: $circle-radius-size;
       height: 22px;
       margin: 2px 0px 0 0;
       cursor: pointer;

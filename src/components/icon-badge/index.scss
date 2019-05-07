@@ -5,7 +5,7 @@
   height: $base-size;
   background: $gray-color;
   color: $grey-color-dark;
-  @include border-radius($radius-size);
+  @include border-radius($circle-radius-size);
   display: flex;
   justify-content: center;
   align-items: center;

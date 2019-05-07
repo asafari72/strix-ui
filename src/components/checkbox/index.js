@@ -5,13 +5,17 @@ export class CheckBox extends Component {
     const { name, text } = this.props;
     return (
       <div className="checkbox-container">
-        <input id={name} name={name} type="checkbox" {...this.props} />
-        <div className="checkmark" />
         <label htmlFor={name} className="checkbox-label">
           {text}
-          <span />
         </label>
+        <input id={name} name={name} type="checkbox" {...this.props} />
+        <span className="checkmark" />
       </div>
+      // <label class="checkbox-container" htmlFor={name}>
+      //   {text}
+      //   <input type="checkbox" id={name}>
+      //     <span class="checkmark"></span>
+      // </label>
     );
   }
 }

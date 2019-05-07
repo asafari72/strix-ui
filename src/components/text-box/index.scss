@@ -6,7 +6,7 @@
   justify-content: flex-start;
   background-color: $white-color;
   margin: $md-size 0;
-  @include border-radius($radius-size);
+  @include border-radius($circle-radius-size);
   height: $base-size;
   padding: $sm-size;
   background: $white-color;
